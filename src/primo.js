@@ -1,7 +1,7 @@
 import {esPrimo } from './primo2'
 export const primo= (gol) => {
   
-  // aca leemos el numero ingresado por teclado
+  // acá leemos el numero ingresado por teclado
     gol.addListener("data", function(d){
         // este array almacenan los numeros entre 2 y el numero ingresado 
         let arr =[]
