@@ -1,15 +1,18 @@
-export const esPrimo = numero => {
+export const esPrimo = (numero) => {
+	
+   let espacio = ''
    
 	// Casos especiales
-	if (numero == 0 || numero == 1 || numero == 4) return ''
-	for (let x = 2; x < numero / 2; x++) {
-		if (numero % x == 0) return ''
+	if (numero == 0 || numero == 1 || numero == 4) {
+		return espacio 
 	}
-	// Si no se pudo dividir por ninguno de los de arriba, sí es primo
-    if(numero){
-        
+	for (let x = 2; x < numero / 2; x++) {
+		if (numero % x === 0) return espacio 
+	}
+	
+	 if(numero){
       return numero
-    } 
+	   }
 	
     
 }
